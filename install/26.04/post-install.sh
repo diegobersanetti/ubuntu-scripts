@@ -34,11 +34,11 @@ fi
 while test ${#} -gt 0
 do
     case $1 in
-        --common) COMMON="ok"; shift; ;;
-        --design) DESIGN="ok"; shift; ;;
-        --android) ANDROID="ok"; shift; ;;
-        --programming) PROGRAMMING="ok"; shift; ;;
-        --photorec) PHOTOREC="ok"; shift; ;;
+        --common)      shift; COMMON="ok"; ;;
+        --design)      shift; DESIGN="ok"; ;;
+        --android)     shift; ANDROID="ok"; ;;
+        --programming) shift; PROGRAMMING="ok"; ;;
+        --photorec)    shift; PHOTOREC="ok"; ;;
         *) shift; ;;
     esac
 done
