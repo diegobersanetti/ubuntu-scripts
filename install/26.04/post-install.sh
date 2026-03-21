@@ -5,6 +5,7 @@
 #  This script will run some commands as sudo
 # 
 #  20/03/2026, v1.0 - Migrated from 24.04
+#  21/03/2026, v1.1 - Disable ubuntu pro apt news
 # 
 # ---------------------------------------------------
 
@@ -57,6 +58,9 @@ sudo sh -c 'echo "\nDefaults timestamp_timeout=-1" >> /etc/sudoers'
 # Full System Update
 sudo apt update
 sudo apt -y upgrade
+
+# disable ubuntu pro apt news
+sudo pro config set apt_news=false
 
 # ---------------------------------------------------
 # ---               Common Packages               ---
