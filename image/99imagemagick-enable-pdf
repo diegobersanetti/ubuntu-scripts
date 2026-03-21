@@ -1,4 +1,4 @@
-## This file is provided by imagemagick-allow-pdf
+## This file is provided by imagemagick-enable-pdf
 ## to re-declare the patch after apt upgrade
  
 # Verify ImageMagick PDF generation patch when dpkg has been executed (i.e. after apt upgrade)
