@@ -61,6 +61,7 @@ sudo apt -y upgrade
 
 # disable ubuntu pro apt news
 sudo pro config set apt_news=false
+sudo systemctl disable ubuntu-advantage
 
 # ---------------------------------------------------
 # ---               Common Packages               ---
