@@ -5,6 +5,7 @@
 #
 # 19/03/2026, v1.0 - Migrated from 24.04
 # 21/03/2026, v1.1 - Add apparmor patch for firefox
+# 15/04/2026, v1.2 - Enable Web Serial on Chromium
 #
 # ----------------------------------------------------------------
 
@@ -25,6 +26,9 @@ sudo chmod +x "/usr/local/bin/yt-dlp"
 # chromium and filezilla
 logger "internet - chromium & filezilla"
 sudo apt -y install chromium-browser filezilla
+
+# enable web serial on chromium
+sudo snap connect chromium:raw-usb
 
 # telegram
 logger "internet - telegram"
